@@ -13,14 +13,11 @@ lang: en_us
 feed_items: 10
 feed_update_period: daily
 feed_update_frequency: 1
-# Conversion
-markdown:    kramdown
 highlighter: rouge
-
-# Markdown Processors
 kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  auto_ids: true
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
 sass:
   sass_dir: _sass
